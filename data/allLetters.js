@@ -114,7 +114,7 @@ const allGreekLetters = [
     ],
   },
   {
-    name: "Upsilon (υ)",
+    name: "Epsilon (υ)",
     description: [
       "Represents potential energy in physics or the argument of a complex number in mathematics.",
     ],
