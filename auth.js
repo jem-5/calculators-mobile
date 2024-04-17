@@ -1,8 +1,8 @@
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
+import { getApps, getApp } from "firebase/app";
+// import { getAuth } from "firebase/auth";
 import { initializeAuth, getReactNativePersistence } from "firebase/auth";
 import ReactNativeAsyncStorage from "@react-native-async-storage/async-storage";
-import { getApps, getApp } from "firebase/app";
 
 // TODO: Replace the following with your app's Firebase project configuration
 // See: https://firebase.google.com/docs/web/learn-more#config-object
@@ -25,12 +25,7 @@ if (getApps().length === 0) {
     persistence: getReactNativePersistence(ReactNativeAsyncStorage),
   });
 } else {
-  // console.log("OLD auth app ones");
   app = getApp();
 }
-
-// console.log(app);
-// Initialize Firebase Authentication and get a reference to the service
-// const auth = getAuth(app);
 
 export default auth;

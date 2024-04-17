@@ -19,10 +19,12 @@
       "supportsTablet": true
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "Calculo.android"
     },
     "web": {
       "bundler": "metro",
@@ -30,21 +32,31 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
+      "@react-native-firebase/app",
       "expo-router",
       [
         "expo-font",
         {
-          "fonts": ["node_modules/@expo-google-fonts/inter/Inter_100Thin.ttf",
-          "node_modules/@expo-google-fonts/inter/Inter_400Regular.ttf",
-          "node_modules/@expo-google-fonts/comfortaa/Comfortaa_400Regular.ttf",
-          "node_modules/@expo-google-fonts/comfortaa/Comfortaa_600SemiBold.ttf",
-          "node_modules/@expo-google-fonts/inter/Inter_900Black.ttf"
-        ]
+          "fonts": [
+            "node_modules/@expo-google-fonts/inter/Inter_100Thin.ttf",
+            "node_modules/@expo-google-fonts/inter/Inter_400Regular.ttf",
+            "node_modules/@expo-google-fonts/comfortaa/Comfortaa_400Regular.ttf",
+            "node_modules/@expo-google-fonts/comfortaa/Comfortaa_600SemiBold.ttf",
+            "node_modules/@expo-google-fonts/inter/Inter_900Black.ttf"
+          ]
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "7e1aa048-4f2c-45ad-8a69-067eb617cf1c"
+      }
     }
   }
 }

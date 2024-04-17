@@ -1,4 +1,4 @@
-import "expo-dev-client";
+// import "expo-dev-client";
 
 import { Image } from "react-native";
 import React, { useState } from "react";
@@ -60,7 +60,7 @@ export default function Home() {
 
   return (
     <CustomView>
-      <CustomTitle>EngineerCal</CustomTitle>
+      <CustomTitle>Calculo</CustomTitle>
       <Image source={require("../assets/images/app-pic.png")} />
       <CustomText>
         Perform complex engineering tasks easily. Log in to save your work.
