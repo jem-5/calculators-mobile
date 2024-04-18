@@ -1,4 +1,4 @@
-// import "expo-dev-client";
+import "expo-dev-client";
 
 import { Image } from "react-native";
 import React, { useState } from "react";
@@ -18,6 +18,7 @@ import {
   signInWithEmailAndPassword,
   signInAnonymously,
 } from "firebase/auth";
+import myAuth from "../auth";
 
 export default function Home() {
   const [email, setEmail] = useState("");
@@ -26,7 +27,7 @@ export default function Home() {
   const colors = useThemeColors();
   const fontsLoaded = useCustomFonts();
   if (!fontsLoaded) return null;
-
+  console.log("myauth", myAuth);
   const auth = getAuth();
 
   const signIn = () => {
@@ -60,7 +61,7 @@ export default function Home() {
 
   return (
     <CustomView>
-      <CustomTitle>Calculo</CustomTitle>
+      <CustomTitle>Calculo App</CustomTitle>
       <Image source={require("../assets/images/app-pic.png")} />
       <CustomText>
         Perform complex engineering tasks easily. Log in to save your work.

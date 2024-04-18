@@ -6,6 +6,7 @@ import ReactNativeAsyncStorage from "@react-native-async-storage/async-storage";
 
 // TODO: Replace the following with your app's Firebase project configuration
 // See: https://firebase.google.com/docs/web/learn-more#config-object
+
 const firebaseConfig = {
   apiKey: "AIzaSyCmvg1Q3vtlpxrKi4A3lh_6oVZfTWaO2Fc",
   authDomain: "calculators-30db4.firebaseapp.com",
@@ -18,14 +19,14 @@ const firebaseConfig = {
 };
 
 let app;
-let auth;
+let myAuth;
 if (getApps().length === 0) {
   app = initializeApp(firebaseConfig);
-  auth = initializeAuth(app, {
+  myAuth = initializeAuth(app, {
     persistence: getReactNativePersistence(ReactNativeAsyncStorage),
   });
 } else {
   app = getApp();
 }
 
-export default auth;
+export default myAuth;
