@@ -61,7 +61,7 @@ export default function Home() {
 
   return (
     <CustomView>
-      <CustomTitle>Calculo App</CustomTitle>
+      <CustomTitle>CALCULO</CustomTitle>
       <Image source={require("../assets/images/app-pic.png")} />
       <CustomText>
         Perform complex engineering tasks easily. Log in to save your work.
