@@ -66,7 +66,7 @@ export default function Projectile() {
         conditions.
       </CustomText>
 
-      <CustomView style={{ borderWidth: 2, width: 350 }}>
+      <CustomView style={{ borderWidth: 2, width: 350, gap: 20 }}>
         <CustomView dir="horiz">
           <CustomInput placeholder="Speed" onChangeText={setVel} value={vel} />
           <CustomPicker

@@ -125,7 +125,7 @@ export default function FreeFall() {
         remaining variables.
       </CustomText>
 
-      <CustomView style={{ borderWidth: 2, width: 350 }}>
+      <CustomView style={{ borderWidth: 2, width: 350, gap: 5 }}>
         <CustomView dir="horiz">
           <MaterialIcons name="square" style={globalStyles.matIcon} />
           <CustomText style={[globalStyles.heading]}>Object Falling</CustomText>

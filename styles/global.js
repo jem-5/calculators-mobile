@@ -6,7 +6,7 @@ export const globalStyles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "flex-start",
     padding: 20,
-    gap: 2,
+    gap: 5,
   },
   lightContainer: {
     backgroundColor: "white",

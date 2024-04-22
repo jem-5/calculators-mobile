@@ -66,7 +66,7 @@ export default function HeatCapacity() {
       </CustomView>
       <CustomText>Determine the ability of a body to absorb heat.</CustomText>
 
-      <CustomView style={{ borderWidth: 2, width: 350 }}>
+      <CustomView style={{ borderWidth: 2, width: 350, gap: 20 }}>
         <CustomView dir="horiz">
           <CustomInput
             placeholder="Mass"

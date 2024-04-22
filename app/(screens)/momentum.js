@@ -178,7 +178,7 @@ export default function Momentum() {
         calculator will determine the final value.
       </CustomText>
 
-      <CustomView style={{ borderWidth: 2, width: 350 }}>
+      <CustomView style={{ borderWidth: 2, width: 350, gap: 10 }}>
         <CustomView dir="horiz">
           <MaterialIcons name="square" style={globalStyles.matIcon} />
           <CustomText style={[globalStyles.heading]}>Object 1</CustomText>

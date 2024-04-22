@@ -48,7 +48,7 @@ export default function OrificeFlow() {
         Determine the discharge flow rate of water based on system geometry.
       </CustomText>
 
-      <CustomView style={{ borderWidth: 2, width: 350 }}>
+      <CustomView style={{ borderWidth: 2, width: 350, gap: 10 }}>
         <Image source={OrificeDiagram} />
 
         <CustomView dir="horiz">

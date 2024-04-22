@@ -14,7 +14,8 @@ const allCalculators = [
     link: "/molarMass",
     paragraph:
       "Molar mass is a fundamental concept in chemistry that plays a crucia rolle in various chemical calculations and is essential for understanding the behavior of substances on a molecular level. Molar mass is defined as the mass of one mole of a substance and is expressed in units of grams per mole (g/mol). This quantity represents the average mass of all the atoms or molecules in a sample, taking into account their relative abundances.",
-    slogan: "Molar Mass: where atoms gather for their collective weigh-in!",
+    slogan:
+      "Let's explore Molar Mass, where atoms gather for their collective weigh-in!",
     category: "Chemistry",
     icon: <MaterialCommunityIcons size={iconSize} name={"scale"} />,
   },
@@ -34,7 +35,7 @@ const allCalculators = [
     photo: {},
     link: "/planetWeights",
     paragraph:
-      "      Determining someone's weight on different planets involves understanding the concept of gravitational force and how it varies across celestial bodies. On Earth, weight is the measure of the gravitational force exerted by the planet on an object. This force is directly proportional to the object's mass and inversely proportional to the square of the distance between the object's center of mass and the center of the planet.",
+      "Determining someone's weight on different planets involves understanding the concept of gravitational force and how it varies across celestial bodies. On Earth, weight is the measure of the gravitational force exerted by the planet on an object. This force is directly proportional to the object's mass and inversely proportional to the square of the distance between the object's center of mass and the center of the planet.",
     slogan:
       "Gravity's the ultimate scale shifter! Let's take a trip to Mars, shall we?",
     category: "Physics",
@@ -47,7 +48,7 @@ const allCalculators = [
     paragraph:
       "Average atomic mass, also known as atomic weight, is a concept in chemistry that accounts for the presence of isotopes in the calculation of the mass of an element. Isotopes are atoms of the same element that have different numbers of neutrons, resulting in variations in atomic mass. The average atomic mass considers both the mass and the abundance of each isotope to provide a weighted average that reflects the distribution of isotopes in a naturally occurring sample.",
     slogan:
-      "Let's explore how isotopes compete for the 'weightiest' title in the atomic Olympics!",
+      "Did you know that isotopes compete for the 'weightiest' title in the atomic Olympics?",
     category: "Chemistry",
     icon: <MaterialCommunityIcons size={iconSize} name={"periodic-table"} />,
   },
@@ -58,7 +59,7 @@ const allCalculators = [
     paragraph:
       "The time it takes for a hot drink to reach equilibrium, or cool off, is influenced by various factors such as the initial temperature of the drink, the ambient temperature, the vessel it's in, and the heat capacity of the liquid inside. The process of cooling follows principles of heat transfer and thermodynamics, and one can use Newton's Law of Cooling to model this phenomenon.",
     slogan:
-      "Caffeine Cooling Chronicles: where patience is brewed one sip at a time!",
+      "Will this drink ever cool off? Let's investigate caffeine cooling, where patience is brewed one sip at a time!",
     category: "Heat Transfer",
     icon: <MaterialIcons size={iconSize} name={"emoji-food-beverage"} />,
   },
@@ -69,7 +70,7 @@ const allCalculators = [
     paragraph:
       "Conductive heat transfer is a fundamental mode of heat transfer that occurs when thermal energy flows through a solid material due to the direct interaction of neighboring atoms and molecules. In solids, heat is transferred through the vibration and collision of atoms within the lattice structure. The efficiency of this process depends on the material's thermal conductivity, which is a property defining its ability to conduct heat.",
     slogan:
-      "Heat Conduction: where molecules pass the hot potato faster than you can say 'ouch!'",
+      "How well do different materials conduct heat? Let's take a look at Heat Conduction, where molecules pass the hot potato faster than you can say 'ouch!'",
     category: "Heat Transfer",
     icon: <MaterialIcons size={iconSize} name={"heat-pump"} />,
   },
@@ -80,7 +81,7 @@ const allCalculators = [
     paragraph:
       "Electron configuration is a representation of how electrons are distributed among the energy levels, or shells, in an atom. It describes the specific arrangement of electrons in an atom, detailing which energy levels contain electrons and how many electrons are in each level. The electron configuration is crucial for understanding the chemical behavior and properties of  elements.",
     slogan:
-      "Electron Configuration: unraveling atomic secrets, one electron dance party at a time!",
+      "How are electrons distributed in each element? Let's unravel atomic secrets, one electron at a time!",
     category: "Chemistry",
     icon: <Ionicons size={iconSize} name={"logo-electron"} />,
   },
@@ -91,7 +92,7 @@ const allCalculators = [
     paragraph:
       "Electronegativity is a fundamental property of elements that measures their ability to attract electrons in a chemical bond. It plays a crucial role in predicting the type of bond that forms between two elements in a compound. The electronegativity values, usually assigned based on the Pauling scale, range from 0.7 for cesium to 4.0 for fluorine. The larger the electronegativity difference between two elements, the more polar the bond, and the more likely an ionic or polar covalent bond will form.",
     slogan:
-      "Bonding Bingo: where electronegativity sparks relationships that make or break!",
+      "How can we predict the bond between two elements? Let's see how electronegativity sparks relationships that make or break!",
     category: "Chemistry",
     icon: <SimpleLineIcons size={iconSize} name={"chemistry"} />,
   },
@@ -102,7 +103,7 @@ const allCalculators = [
     paragraph:
       "  In the context of free fall, an object is falling under the influence of gravity with no other forces acting on it except for gravity. The motion of an object in free fall can be described using several kinematic equations that relate its position, velocity, time, and acceleration. Three key parameters often of         interest are time, speed, and height, and they can be calculated using these equations.",
     slogan:
-      "Wheee! Free Fall Follies: where gravity plays the ultimate game of 'What Goes Up Must Come Down!'",
+      "Wheee! Let's investigate the physics of a free fall, where gravity plays the ultimate game of 'What Goes Up Must Come Down!'",
     category: "Physics",
     icon: <MaterialIcons size={iconSize} name={"sports-volleyball"} />,
   },
@@ -114,7 +115,7 @@ const allCalculators = [
     paragraph:
       "Heat capacity is a fundamental thermodynamic property that quantifies the amount of heat energy required to raise the temperature of a substance by a certain amount. The heat capacity of a material can be calculated based on its mass and the specific heat of the material.",
     slogan:
-      "Heat Capacity: turning up the heat on materials until they spill the beans on their thermal secrets!",
+      "Let's study Heat Capacity and turn up the heat on materials until they spill the beans on their thermal secrets!",
     category: "Heat Transfer",
     icon: <MaterialIcons size={iconSize} name={"heat-pump"} />,
   },
@@ -123,9 +124,9 @@ const allCalculators = [
     photo: {},
     link: "/hydraulicRadius",
     paragraph:
-      "      The hydraulic radius is a crucial parameter in fluid mechanics that characterizes the efficiency of a pipe or channel in transporting water. It is defined as the ratio of the cross-sectional area of the flow to the wetted perimeter. The hydraulic radius is a key factor in determining the frictional losses and the velocity distribution of flowing water.",
+      "The hydraulic radius is a crucial parameter in fluid mechanics that characterizes the efficiency of a pipe or channel in transporting water. It is defined as the ratio of the cross-sectional area of the flow to the wetted perimeter. The hydraulic radius is a key factor in determining the frictional losses and the velocity distribution of flowing water.",
     slogan:
-      "Hydraulic Radius: where pipes reveal their inner curves because even water wants to know its flow status!",
+      "Let's explore the Hydraulic Radius, where pipes reveal their inner curves because even water wants to know its flow status!",
     category: "Fluid Mechanics",
     icon: <MaterialCommunityIcons size={iconSize} name={"pipe"} />,
   },
@@ -134,9 +135,9 @@ const allCalculators = [
     photo: {},
     link: "/idealGas",
     paragraph:
-      " Performing an ideal gas analysis involves using the ideal gas law, which describes the behavior of an ideal gas under various  conditions. ",
+      "Performing an ideal gas analysis involves using the ideal gas law, which describes the behavior of an ideal gas under various  conditions. ",
     slogan:
-      "Ideal Gases: where gases aspire to be textbook perfect, but reality gives them a dose of comedic relief!",
+      "Is the gas perfect? Let's analyze gases that satisfy the properties of ideality.",
     category: "Heat Transfer",
     icon: <MaterialCommunityIcons size={iconSize} name={"air-filter"} />,
   },
@@ -158,7 +159,7 @@ const allCalculators = [
     paragraph:
       " Calculating orifice flow discharge is a fundamental aspect of fluid mechanics and is commonly employed in various engineering applications, such as in the design of hydraulic systems, flow measurement devices, and water distribution systems. The orifice equation is used to estimate the flow rate through an orifice based on the head of water, the diameter of the orifice, and the discharge coefficient.",
     slogan:
-      "Fluid Flow Funneling: where liquids take the plunge, leaving chaos in their wake!",
+      "Can we get all this water through that small hole? Let's analyze liquid motion through an orifice.",
     category: "Fluid Mechanics",
     icon: <Ionicons size={iconSize} name={"water"} />,
   },
@@ -169,7 +170,7 @@ const allCalculators = [
     paragraph:
       "The percent composition by mass of a molecule is a fundamental concept in chemistry that provides insights into the relative abundance of elements within a compound. It is defined as the percentage of the total mass of a compound that comes from each individual element present in that compound. The percent composition is a critical factor in understanding and characterizing chemical compounds, as it helps elucidate their properties and behaviors.",
     slogan:
-      "What's in a molecule anyway? Exploring the distribution of elements in a molecule.",
+      "What's in a molecule anyway? Let's explore the distribution of elements in a molecule.",
     category: "Chemistry",
     icon: <MaterialCommunityIcons size={iconSize} name={"atom"} />,
   },
@@ -179,7 +180,8 @@ const allCalculators = [
     link: "/pipeFlow",
     paragraph:
       "Calculating pipe flow velocity and volumetric flow rate is crucial in fluid mechanics and engineering, especially when designing piping systems or analyzing fluid transport. The flow velocity and volumetric flow rate are interrelated parameters that provide insights into the dynamics of fluid movement within pipes.",
-    slogan: "Whoosh! Let's explore fluid movement through pipes.",
+    slogan:
+      "Whoosh! Let's explore the movement of liquids through pipes of various geometries.",
     category: "Fluid Mechanics",
     icon: <MaterialCommunityIcons size={iconSize} name={"pipe-leak"} />,
   },
@@ -191,7 +193,7 @@ const allCalculators = [
     paragraph:
       "Projectile motion is a fascinating aspect of classical mechanics that describes the motion of an object thrown into the air, experiencing only the force of gravity and air resistance (if present). This type of motion is characterized by the object following a curved trajectory under the influence of a constant gravitational acceleration. The physics of projectile motion can be analyzed using principles from kinematics and vector analysis.",
     slogan:
-      "Projectile Physics! Sometimes, the laws of gravity just want to see things fly!",
+      "Let's take a look at Projectile Physics. Sometimes, the laws of gravity just want to see things fly!",
     category: "Physics",
     icon: <Ionicons size={iconSize} name={"tennisball"} />,
   },
@@ -202,7 +204,7 @@ const allCalculators = [
     paragraph:
       "The stopping distance of a vehicle is a crucial factor in road safety and is influenced by various parameters, including speed, road conditions (wet or dry), driver reaction time, and road grade or slope. Understanding how these factors interact is essential for designing roadways, establishing speed limits, and promoting safe driving practices.",
     slogan:
-      "Stopping Distance Saga: where speed demons meet their match in a battle of brakes and brainpower!",
+      "Can we quantify Stopping Distance? Let's see how speed demons meet their match in a battle of brakes and brainpower!",
     category: "Physics",
     icon: <Ionicons size={iconSize} name={"car"} />,
   },
@@ -212,7 +214,8 @@ const allCalculators = [
     link: "/thermalResistance",
     paragraph:
       " Thermal resistance and thermal conductivity are crucial concepts in understanding heat transfer processes in materials. Thermal   resistance is a measure of how much a material impedes the flow of heat. It is analogous to electrical resistance in that it represents the opposition to the flow of thermal energy. Thermal resistance is influenced by factors such as material thickness, cross-sectional area, and the thermal conductivity of the  material.",
-    slogan: "Thermal Resistance: Even heat has its social boundaries!",
+    slogan:
+      "Let's evaluate Thermal Resistance of various materials. After all, even heat has its social boundaries!",
     category: "Heat Transfer",
     icon: <MaterialCommunityIcons size={iconSize} name={"thermometer-alert"} />,
   },
@@ -223,7 +226,7 @@ const allCalculators = [
     paragraph:
       " Calculating wind load is a critical aspect of structural engineering, especially when designing buildings, bridges, or other structures exposed to wind forces. Wind load is the force exerted by the wind on a structure, and it is influenced by factors such as wind speed, angle of incidence, and the surface area of the object facing the wind. Understanding and accurately calculating wind loads are essential for ensuring the safety and stability of structures under various wind conditions.",
     slogan:
-      "Wow, it's pretty windy today! Let's explore nature's gentle reminder that even buildings need a good hair day!",
+      "Brr, it's pretty windy today! Let's explore nature's gentle reminder that even buildings need a good hair day!",
     category: "Fluid Mechanics",
     icon: <MaterialCommunityIcons size={iconSize} name={"weather-windy"} />,
   },

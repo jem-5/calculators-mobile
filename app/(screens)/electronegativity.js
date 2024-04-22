@@ -47,7 +47,7 @@ export default function Electronegativity() {
         them.
       </CustomText>
 
-      <CustomView style={{ borderWidth: 2, width: 350 }}>
+      <CustomView style={{ borderWidth: 2, width: 350, gap: 20 }}>
         <CustomView dir="horiz">
           <MaterialIcons name="science" style={globalStyles.matIcon} />
           <CustomText style={[globalStyles.heading]}>Element 1: </CustomText>

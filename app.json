@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "calc",
-    "slug": "calc",
+    "name": "Calculo",
+    "slug": "Calculo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/myicon.png",
@@ -21,7 +21,7 @@
     "android": {
       "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/myicon.png",
         "backgroundColor": "#ffffff"
       },
       "package": "Calculo.android"

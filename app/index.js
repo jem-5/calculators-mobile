@@ -1,8 +1,8 @@
 import "expo-dev-client";
 
 import { Image } from "react-native";
-import React, { useState } from "react";
-import { router } from "expo-router";
+import React, { useEffect, useState } from "react";
+import { router, useFocusEffect } from "expo-router";
 import { globalStyles } from "../styles/global";
 import useThemeColors from "../hooks/useThemeColors";
 import useCustomFonts from "../hooks/useCustomFonts";
@@ -14,21 +14,42 @@ import CustomPressable from "../components/customPressable";
 import CustomInput from "../components/customInput";
 import { MaterialIcons } from "@expo/vector-icons";
 import {
-  getAuth,
   signInWithEmailAndPassword,
   signInAnonymously,
+  setPersistence,
+  browserLocalPersistence,
+  onAuthStateChanged,
 } from "firebase/auth";
 import myAuth from "../auth";
+import { ReactNativeAsyncStorage } from "@react-native-async-storage/async-storage";
+import { getAuth } from "firebase/auth";
+import { useCallback } from "react";
 
 export default function Home() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
+  const auth = getAuth();
 
   const colors = useThemeColors();
   const fontsLoaded = useCustomFonts();
-  if (!fontsLoaded) return null;
-  console.log("myauth", myAuth);
-  const auth = getAuth();
+  // if (!fontsLoaded) return null;
+
+  const checkAuth = () => {
+    onAuthStateChanged(auth, (user) => {
+      console.log("user index", user);
+      if (user) {
+        if (!user.isAnonymous) router.navigate("/dashboard");
+      }
+    });
+  };
+
+  useFocusEffect(
+    useCallback(() => {
+      checkAuth();
+    }, [])
+  );
 
   const signIn = () => {
     signInWithEmailAndPassword(auth, email, password)

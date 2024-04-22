@@ -1,7 +1,11 @@
 import { initializeApp } from "firebase/app";
 import { getApps, getApp } from "firebase/app";
 // import { getAuth } from "firebase/auth";
-import { initializeAuth, getReactNativePersistence } from "firebase/auth";
+import {
+  initializeAuth,
+  getReactNativePersistence,
+  getAuth,
+} from "firebase/auth";
 import ReactNativeAsyncStorage from "@react-native-async-storage/async-storage";
 
 // TODO: Replace the following with your app's Firebase project configuration
@@ -27,6 +31,7 @@ if (getApps().length === 0) {
   });
 } else {
   app = getApp();
+  myAuth = getAuth(app);
 }
 
 export default myAuth;

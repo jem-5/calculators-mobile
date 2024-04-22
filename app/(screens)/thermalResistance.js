@@ -126,7 +126,7 @@ export default function ThermalResistance() {
         geometries.
       </CustomText>
 
-      <CustomView style={{ borderWidth: 2, width: 350 }}>
+      <CustomView style={{ borderWidth: 2, width: 350, gap: 20 }}>
         <CustomView dir="horiz" style={{ justifyContent: "center" }}>
           <CustomPicker
             onValueChange={(value) => {

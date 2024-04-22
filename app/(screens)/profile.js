@@ -119,9 +119,6 @@ export default function Profile() {
 
       {!anonUser ? (
         <>
-          <CustomPressable>
-            <CustomText>Edit</CustomText>
-          </CustomPressable>
           <CustomText>Name: {auth.currentUser.displayName}</CustomText>
           <CustomText>Email: {auth.currentUser.email}</CustomText>
           <CustomText>Member Since: {signupDate} </CustomText>
