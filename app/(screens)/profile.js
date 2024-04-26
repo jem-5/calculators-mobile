@@ -26,6 +26,8 @@ export default function Profile() {
   const [signupDate, setSignupDate] = useState("");
   const [lastLogin, setLastLogin] = useState("");
   const [favorites, setFavorites] = useState([]);
+  const [error, setError] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   const auth = getAuth();
 
@@ -70,9 +72,29 @@ export default function Profile() {
       })
       .catch((error) => {
         const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(errorCode, errorMessage);
+        const message = findErrorMsg(errorCode);
+        setError(message);
+        console.log(errorCode);
       });
+  };
+
+  const findErrorMsg = (code) => {
+    switch (code) {
+      case "auth/email-already-exists":
+        return "Email already exists";
+      case "auth/internal-error":
+        return "Internal error";
+      case "auth/invalid-credential":
+        return "Incorrect email or password";
+      case "auth/invalid-display-name":
+        return "Display name invalid";
+      case "auth/invalid-email":
+        return "Email invalid";
+      case "auth/user-not-found":
+        return "User not found";
+      default:
+        return "";
+    }
   };
 
   async function getData() {
@@ -113,6 +135,10 @@ export default function Profile() {
     }
   };
 
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
   return (
     <CustomView style={{ alignItems: "flex-start" }}>
       <CustomTitle style={{ fontSize: 20 }}>Profile</CustomTitle>
@@ -147,14 +173,22 @@ export default function Profile() {
                 value={email}
               />
             </CustomView>
-            <CustomView dir="horiz">
-              <MaterialIcons name="password" size={30} />
+            <CustomView dir="horiz" style={{ alignItems: "center" }}>
+              <MaterialIcons name="lock" size={30} />
+
               <CustomInput
                 placeholder="Password"
                 onChangeText={setPassword}
                 keyboard="default"
                 value={password}
-                secureTextEntry={true}
+                secureTextEntry={!showPassword}
+              />
+
+              <Ionicons
+                name={showPassword ? "eye-outline" : "eye-off-outline"}
+                size={30}
+                onPress={togglePasswordVisibility}
+                style={{ position: "absolute", right: 5 }}
               />
             </CustomView>
 
@@ -165,6 +199,9 @@ export default function Profile() {
             >
               Log in
             </CustomPressable>
+            {error ? (
+              <CustomText style={{ fontSize: 17 }}>{error}</CustomText>
+            ) : null}
           </CustomView>
 
           <CustomText>
